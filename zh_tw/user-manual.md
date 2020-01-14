@@ -1,9 +1,5 @@
 # 用戶手冊
 
-## 欢迎
-
-非常感謝您選擇使用Telegram SMS，閱讀此手冊能夠更好的幫助您從零開始創建一個Telegram SMS機器人。
-
 ## 介紹
 
 Telegram SMS 是一個運行在您 Android 設備上的 Telegram Bot，它無需第三方中轉服務器，只要您當前的網絡環境能夠正常訪問 `api.telegram.org` 即可正常使用。它可以通過遠程指令，來方便管理您的簡訊，未接電話以及電量。
