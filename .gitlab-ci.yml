@@ -1,8 +1,16 @@
-# This file is a template, and might need editing before it works on your project.
-# Full project: https://gitlab.com/pages/hexo
+
 image: billryan/gitbook
 
 pages:
   script:
     - cp ./* /gitbook 
-    - gitbook build
+    - gitbook build --output=$(pwd)/public
+  artifacts:
+    paths:
+      - public
+  cache:
+    paths:
+      - node_modules
+    key: project
+  only:
+    - master
