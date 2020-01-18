@@ -1,0 +1,16 @@
+
+image: billryan/gitbook
+
+pages:
+  script:
+    - cp ./* /gitbook 
+    - gitbook build --output=$(pwd)/public
+  artifacts:
+    paths:
+      - public
+  cache:
+    paths:
+      - node_modules
+    key: project
+  only:
+    - master
