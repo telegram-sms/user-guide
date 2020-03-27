@@ -15,7 +15,7 @@ build:
   - yarn global add gitbook-cli
   - export PATH="$(yarn global bin):$PATH"
   - git clone git@github.com:telegram-sms/guide.telegram-sms.com.git _book
-  - rm ./_book/*
+  - rm -r ./_book/*
   - gitbook build
   - cd _book
   - git add .
