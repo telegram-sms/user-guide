@@ -23,4 +23,4 @@ build:
   - git config --global user.name "reall Network"
   - git subtree add .
   - git commit -m $TAG
-  - git subtree push --force --set-upstream git@github.com:telegram-sms/guide.telegram-sms.com.git HEAD:refs/heads/${CI_COMMIT_REF_NAME}
+  - git push --force --set-upstream git@github.com:telegram-sms/guide.telegram-sms.com.git HEAD:refs/heads/${CI_COMMIT_REF_NAME}
