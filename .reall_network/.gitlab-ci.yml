@@ -21,6 +21,6 @@ build:
   - cd _book
   - git config --global user.email "reall_network@hotmail.com"
   - git config --global user.name "reall Network"
-  - git subtree add .
+  - git add .
   - git commit -m $TAG
   - git push --force --set-upstream git@github.com:telegram-sms/guide.telegram-sms.com.git HEAD:refs/heads/${CI_COMMIT_REF_NAME}
