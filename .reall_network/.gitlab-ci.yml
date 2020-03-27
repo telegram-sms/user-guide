@@ -2,7 +2,6 @@ cache:
   key: ${CI_PROJECT_ID}
   paths:
   - node_modules/
-  - dist/
 
 build:
   image: node:latest
@@ -13,7 +12,8 @@ build:
   - eval $(ssh-agent -s)
   - ssh-add - <<< $(curl https://${KEYSTORE_SERVER}/gitlab-sshkey/id_ecdsa -u gitlab:${key_store_passwd})
   - git push --set-upstream git@github.com:telegram-sms/user-guide.git HEAD:refs/heads/${CI_COMMIT_REF_NAME}
-  - npm install -g gitbook-cli
+  - yarn global add gitbook-cli
+  - export PATH="$(yarn global bin):$PATH"
   - git clone git@github.com:telegram-sms/guide.telegram-sms.com.git _book
   - rm ./_book/*
   - gitbook build
