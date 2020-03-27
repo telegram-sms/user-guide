@@ -14,12 +14,12 @@ build:
   - git push --set-upstream git@github.com:telegram-sms/user-guide.git HEAD:refs/heads/${CI_COMMIT_REF_NAME}
   - yarn global add gitbook-cli
   - export PATH="$(yarn global bin):$PATH"
+  - git config --global user.email "reall_network@hotmail.com"
+  - git config --global user.name "reall Network"
   - git subtree add --prefix=_book git@github.com:telegram-sms/guide.telegram-sms.com.git master --squash
   - rm -r ./_book/*
   - gitbook build
   - cd _book
-  - git config --global user.email "reall_network@hotmail.com"
-  - git config --global user.name "reall Network"
   - git add .
   - git commit -m $TAG
   - git subtree push --force --prefix=_book git@github.com:telegram-sms/guide.telegram-sms.com.git master
