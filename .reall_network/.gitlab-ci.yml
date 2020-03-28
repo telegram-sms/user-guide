@@ -22,4 +22,4 @@ build:
   - cd _book
   - git add .
   - git commit -m $TAG
-  - git subtree push --force --prefix=_book git@github.com:telegram-sms/guide.telegram-sms.com.git master
+  - git subtree push --prefix=_book git@github.com:telegram-sms/guide.telegram-sms.com.git master
