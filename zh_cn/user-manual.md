@@ -1,5 +1,9 @@
 # 用户手册
 
+## 欢迎
+
+感谢您使用 Telegram SMS！通过阅读本手册，您可以从头开始学习如何更好地构建 Telegram SMS 机器人。
+
 ## 介绍
 
 Telegram SMS 是一个运行在您 Android 设备上的 Telegram Bot ，它无需第三方中转服务器，只要您当前的网络环境能够正常访问 `api.telegram.org` 即可正常使用。它可以通过远程指令，来方便管理您的短信，未接电话以及电量。
