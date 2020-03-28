@@ -1,0 +1,26 @@
+cache:
+  key: ${CI_PROJECT_ID}
+  paths:
+  - node_modules/
+
+build:
+  image: node:latest
+  script:
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  - export TAG=${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}-$(date "+%Y%m%d%H%M")
+  - eval $(ssh-agent -s)
+  - ssh-add - <<< $(curl https://${KEYSTORE_SERVER}/gitlab-sshkey/id_ecdsa -u gitlab:${key_store_passwd})
+  - git push --set-upstream git@github.com:telegram-sms/user-guide.git HEAD:refs/heads/${CI_COMMIT_REF_NAME}
+  - yarn global add gitbook-cli
+  - export PATH="$(yarn global bin):$PATH"
+  - git config --global user.email "reall_network@hotmail.com"
+  - git config --global user.name "reall Network"
+  - git subtree add --prefix=_book git@github.com:telegram-sms/guide.telegram-sms.com.git master --squash
+  - rm -r ./_book/*
+  - gitbook build
+  - cd _book
+  - git add .
+  - git commit -m $TAG
+  - cd ..
+  - git subtree push --prefix=_book git@github.com:telegram-sms/guide.telegram-sms.com.git master
