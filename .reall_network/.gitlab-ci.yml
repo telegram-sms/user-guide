@@ -22,4 +22,5 @@ build:
   - cd _book
   - git add .
   - git commit -m $TAG
+  - cd ..
   - git subtree push --prefix=_book git@github.com:telegram-sms/guide.telegram-sms.com.git master
