@@ -69,7 +69,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 ### 注意
 * Telegram SMS 需要您禁用电池优化功能，禁用电池优化功能将使程序能够稳定快速的接收您的消息。如若使用代理软件，请一并设置禁用电池优化。
 
-* 当您使用 MIUI 等定制化系统时，请注意在设置中将电池限制关闭，并且启用开机自动启动。当您需要接收通知类短信的时候，请在设置中将通知类短信权限打开。[更多请点击这里](https://reall.uk/d/10-answer-to-the-inability-to-receive-a-verification-code-sms)
+* 当您使用 MIUI 等定制化系统时，请注意在设置中将电池限制关闭，并且启用开机自动启动。当您需要接收通知类短信的时候，请在设置中将通知类短信权限打开。[更多请点击这里](https://guide.telegram-sms.com/zh_cn/q&a#%E6%88%91%E8%83%BD%E6%94%B6%E5%88%B0%E4%B8%80%E8%88%AC%E7%9A%84%E7%9F%AD%E4%BF%A1%EF%BC%8C%E4%BD%86%E6%B2%A1%E6%9C%89%E5%8A%9E%E6%B3%95%E6%94%B6%E5%88%B0%E5%90%AB%E6%9C%89%E9%AA%8C%E8%AF%81%E7%A0%81%E7%9A%84%E7%9F%AD%E4%BF%A1)
 
 * 当您使用 EMUI 时，由于特殊的系统后台管理机制，Telegram SMS的后台进程无法正常在后台执行。
 
@@ -137,8 +137,8 @@ cxll
 
 ## 5、版权信息
 
-> Telegram® 是 Telegram Messenger LLP 的注册商标。
+- Telegram® 是 Telegram Messenger LLP 的注册商标。
 
-> Cloudflare® 是 Cloudflare, Inc. 的注册商标。
+- Cloudflare® 是 Cloudflare, Inc. 的注册商标。
 
-> MIUI® 是小米科技有限责任公司的注册商标。
+- MIUI® 是小米科技有限责任公司的注册商标。
