@@ -8,7 +8,7 @@ This problem often happens on deeply customized systems, where all the SMS broad
 
 According to some feedbacks, Telegram SMS cannot forward SMS on certain ROMs, including Huawei EMUI and Xiaomi MIUI. We find this is because these two systems protect verification SMS, which makes the verification codes cannot be got from the broadcasts. Following are the solutions:
 
-**RISK WARNING! Forwarding verification codes may bring risk to your privacy and account security. if you ARE NOT ware of such risk, please DO NOT proceed. **
+**RISK WARNING! Forwarding verification codes may bring risk to your privacy and account security. if you ARE NOT ware of such risk, please DO NOT proceed.**
 
 Huawei EMUI*:
 ```
