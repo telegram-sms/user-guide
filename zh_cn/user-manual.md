@@ -14,9 +14,9 @@ Telegram SMS 是一个运行在您 Android 设备上的 Telegram Bot ，它无�
 
 > Telegram SMS 采取一台手机一个机器人账户的原则，故请不要多台手机共用一个机器人账户。您可以将多个机器人账户加到群组或频道中进行集中管理。
 
-* 提示`Alright, a new bot. How are we going to call it? Please choose a name for your bot.` ，输入您的机器人账户显示名称。
+* 当您看到`Alright, a new bot. How are we going to call it? Please choose a name for your bot.` ，输入您的机器人账户显示名称。
 
-* 提示`Good. Now let's choose a username for your bot. It must end in bot. Like this, for example: TetrisBot or tetris_bot.`  输入您的机器人用户名，用户名必须用 `bot` 作为结尾
+* 当您看到`Good. Now let's choose a username for your bot. It must end in bot. Like this, for example: TetrisBot or tetris_bot.`  输入您的机器人用户名，用户名必须用 `bot` 作为结尾
 
 * 然后您会获取到一个机器人令牌和一个添加链接，就像下面这样。
 
@@ -38,9 +38,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 >您可以使用 https://qrcode.telegram-sms.com 生成一个内容为机器人令牌的二维码。并使用扫描二维码功能快速输入机器人令牌。
 
->如果您能使用 ADB 进行调试。您可以将输入焦点放在机器人令牌一栏，使用 `adb shell input text <您的机器人令牌>`（需要当前系统环境中含有adb），这将模拟键盘输入机器人令牌。
-
-* 将机器人激活、加入频道或群组中。如果加入群组中并使用 `仅响应包含机器人用户名的命令` 功能，请在 `BotFather` 中关闭 `Privacy mode`，以避免部分结构化信息无法被正常收到。
+* 将机器人激活、加入频道或群组中。如果加入群组中并使用 `仅响应包含机器人用户名的命令` 功能，请在 `BotFather` 中关闭 `Privacy mode`，避免部分消息无法被正确处理。
 
 * 在目标对话中发一些消息，内容任意。
 
@@ -55,7 +53,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 >* 监控充电器状态 - 当充电器状态发生变动的时候，发送消息。
 >* 获取聊天命令 - 使用聊天命令管理机器人(不启用将仅使用短信管理)。
 >* 验证码自动提取 - 自动识别获取短信中的验证码(实验性功能)。
->* 在双卡模式下显示SIM卡别名 - 在消息标题显示卡别名。
+>* 显示SIM卡别名 - 在消息标题显示卡别名。
 >* 仅响应包含机器人用户名的命令 - 在群组或频道中只响应包含机器人用户名的命令。 
 >* 使用 DNS over HTTPS - 使用安全带加密的DNS服务（基于 Cloudflare®）。
 
