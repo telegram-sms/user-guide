@@ -35,7 +35,7 @@ where  `xxxxxxxx:xxxxxxxxxxxxxx` is the token of your bot. You can find your bot
 ## 2. Configuration - Let the bot respond properly
 
 
-### Please click on the t.me URL to add your bot to your conversation list and start it. You can send several `/start` to start your bot, which helps later.
+**Please click on the t.me URL to add your bot to your conversation list and start it. You can send several `/start` to start your bot, which helps later.**
 
 > Telegram SMS use Long Polling to listen on the commands, so no Webhook is needed. If your bot set the Webhook before, please visit `https://apt.telegram.org/bot<Your bot token>/setwebhook` to clear the Webhook settings.
 
