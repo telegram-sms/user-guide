@@ -20,7 +20,7 @@ git allows tons of flexibility in the workflow of how people work together, so i
 ```
 git clone https://github.com/telegram-sms/telegram-sms.git telegram-sms
 cd telegram-sms
-git checkout nightly
+git submodule update --init --recursive
 ```
 
 #### 2. configure the compilation environment
@@ -36,6 +36,7 @@ export ALIAS_PASSWORD=<Your password>
 export ALIAS_NAME=<Your alias name>
 export VERSION_CODE=1
 export VERSION_NAME="Debug"
+./gradlew app:copy_language_pack
 ```
 
 #### 3. run compile
