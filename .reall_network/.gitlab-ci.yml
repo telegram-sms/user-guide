@@ -4,7 +4,7 @@ cache:
   - node_modules/
 
 build:
-  image: node:12.18.2-alpine3.12
+  image: node:12.18.2
   script:
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
